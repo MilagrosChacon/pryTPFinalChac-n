@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,10 +21,14 @@ namespace pryTPFinalChacón
             }
         }
 
+        private ClassEmpleados empleados;
+
         public FormRegistro()
         {
             InitializeComponent();
             this.KeyDown += new KeyEventHandler(FormRegistro_KeyDown);
+
+            empleados = new ClassEmpleados(@"Provider = Microsoft.ACE.OLEDB.12.0;" + " Data Source = ..\\..\\Resources\\EMPLEADO.accdb");
         }
 
         private void btnRegistrar_Click(object sender, EventArgs e)
@@ -40,6 +45,7 @@ namespace pryTPFinalChacón
                 return;
             }
 
+            empleados.RegistrarEmpleado(nombre, apellido, ciudad, direccion);
             string mensaje = $"¡Registro exitoso!\nNombre: {nombre}\nApellido: {apellido}\nCiudad: {ciudad}\nDirección: {direccion}";
             MessageBox.Show(mensaje, "¡Registro Exitoso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

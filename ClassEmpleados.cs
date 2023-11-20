@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace pryTPFinalChacón
 {
@@ -19,7 +20,7 @@ namespace pryTPFinalChacón
 
         public string cadenaConexion;
 
-        public ClassEmpleados(string nombreArchivo)
+        public ClassEmpleados(string empleados)
         {
 
             cadenaConexion = @"Provider = Microsoft.ACE.OLEDB.12.0;" + " Data Source = ..\\..\\Resources\\EMPLEADO.accdb";
