@@ -35,11 +35,12 @@
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
             this.btnListar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewListado = new System.Windows.Forms.DataGridView();
             this.pctVolver = new System.Windows.Forms.PictureBox();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.tabControlDatos.SuspendLayout();
             this.tabPageApellido.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,13 +104,13 @@
             this.btnListar.Text = "Listar";
             this.btnListar.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dataGridViewListado
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(15, 266);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(530, 179);
-            this.dataGridView1.TabIndex = 5;
+            this.dataGridViewListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewListado.Location = new System.Drawing.Point(15, 266);
+            this.dataGridViewListado.Name = "dataGridViewListado";
+            this.dataGridViewListado.Size = new System.Drawing.Size(530, 179);
+            this.dataGridViewListado.TabIndex = 5;
             // 
             // pctVolver
             // 
@@ -121,14 +122,25 @@
             this.pctVolver.TabIndex = 6;
             this.pctVolver.TabStop = false;
             // 
+            // btnVolver
+            // 
+            this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(470, 451);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 28);
+            this.btnVolver.TabIndex = 7;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            // 
             // FormListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(557, 459);
+            this.ClientSize = new System.Drawing.Size(557, 491);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pctVolver);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewListado);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.tabControlDatos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -139,7 +151,7 @@
             this.tabControlDatos.ResumeLayout(false);
             this.tabPageApellido.ResumeLayout(false);
             this.tabPageApellido.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).EndInit();
             this.ResumeLayout(false);
 
@@ -153,7 +165,8 @@
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label lblApellido;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewListado;
         private System.Windows.Forms.PictureBox pctVolver;
+        private System.Windows.Forms.Button btnVolver;
     }
 }

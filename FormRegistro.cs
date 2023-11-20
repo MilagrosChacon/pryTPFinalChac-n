@@ -31,18 +31,16 @@ namespace pryTPFinalChacón
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Text;
             string ciudad = txtCiudad.Text;
-            string calle = txtCalle.Text;
-            string numero = txtNumero.Text;
+            string direccion = txtDireccion.Text;
 
             if (string.IsNullOrWhiteSpace(nombre) || string.IsNullOrWhiteSpace(apellido) ||
-                string.IsNullOrWhiteSpace(ciudad) || string.IsNullOrWhiteSpace(calle) ||
-                string.IsNullOrWhiteSpace(numero))
+                string.IsNullOrWhiteSpace(ciudad) || string.IsNullOrWhiteSpace(direccion))
             {
                 MessageBox.Show("Todos los campos deben ser completados.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
-            string mensaje = $"¡Registro exitoso!\nNombre: {nombre}\nApellido: {apellido}\nCiudad: {ciudad}\nCalle: {calle}\nNúmero: {numero}";
+            string mensaje = $"¡Registro exitoso!\nNombre: {nombre}\nApellido: {apellido}\nCiudad: {ciudad}\nDirección: {direccion}";
             MessageBox.Show(mensaje, "¡Registro Exitoso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
         }

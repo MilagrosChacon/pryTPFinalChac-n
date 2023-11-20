@@ -37,12 +37,10 @@
             this.tabControlDatos = new System.Windows.Forms.TabControl();
             this.tabPageDireccion = new System.Windows.Forms.TabPage();
             this.tabPageContactos = new System.Windows.Forms.TabPage();
-            this.txtCalle = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtCiudad = new System.Windows.Forms.TextBox();
-            this.lblCalle = new System.Windows.Forms.Label();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.lblCiudad = new System.Windows.Forms.Label();
-            this.txtNumero = new System.Windows.Forms.TextBox();
-            this.lblNumero = new System.Windows.Forms.Label();
             this.btnVolver = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.pctRegistro = new System.Windows.Forms.PictureBox();
@@ -109,21 +107,19 @@
             this.tabControlDatos.Location = new System.Drawing.Point(24, 221);
             this.tabControlDatos.Name = "tabControlDatos";
             this.tabControlDatos.SelectedIndex = 0;
-            this.tabControlDatos.Size = new System.Drawing.Size(537, 161);
+            this.tabControlDatos.Size = new System.Drawing.Size(537, 130);
             this.tabControlDatos.TabIndex = 1;
             // 
             // tabPageDireccion
             // 
-            this.tabPageDireccion.Controls.Add(this.txtNumero);
-            this.tabPageDireccion.Controls.Add(this.lblNumero);
-            this.tabPageDireccion.Controls.Add(this.txtCalle);
+            this.tabPageDireccion.Controls.Add(this.txtDireccion);
             this.tabPageDireccion.Controls.Add(this.lblCiudad);
             this.tabPageDireccion.Controls.Add(this.txtCiudad);
-            this.tabPageDireccion.Controls.Add(this.lblCalle);
+            this.tabPageDireccion.Controls.Add(this.lblDireccion);
             this.tabPageDireccion.Location = new System.Drawing.Point(4, 26);
             this.tabPageDireccion.Name = "tabPageDireccion";
             this.tabPageDireccion.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPageDireccion.Size = new System.Drawing.Size(529, 131);
+            this.tabPageDireccion.Size = new System.Drawing.Size(529, 100);
             this.tabPageDireccion.TabIndex = 0;
             this.tabPageDireccion.Text = "Dirección";
             this.tabPageDireccion.UseVisualStyleBackColor = true;
@@ -138,12 +134,12 @@
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
-            // txtCalle
+            // txtDireccion
             // 
-            this.txtCalle.Location = new System.Drawing.Point(83, 52);
-            this.txtCalle.Name = "txtCalle";
-            this.txtCalle.Size = new System.Drawing.Size(285, 25);
-            this.txtCalle.TabIndex = 12;
+            this.txtDireccion.Location = new System.Drawing.Point(83, 52);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(285, 25);
+            this.txtDireccion.TabIndex = 12;
             // 
             // txtCiudad
             // 
@@ -152,47 +148,30 @@
             this.txtCiudad.Size = new System.Drawing.Size(285, 25);
             this.txtCiudad.TabIndex = 10;
             // 
-            // lblCalle
+            // lblDireccion
             // 
-            this.lblCalle.AutoSize = true;
-            this.lblCalle.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCalle.Location = new System.Drawing.Point(13, 57);
-            this.lblCalle.Name = "lblCalle";
-            this.lblCalle.Size = new System.Drawing.Size(42, 20);
-            this.lblCalle.TabIndex = 9;
-            this.lblCalle.Text = "Calle";
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(6, 57);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(72, 20);
+            this.lblDireccion.TabIndex = 9;
+            this.lblDireccion.Text = "Dirección";
             // 
             // lblCiudad
             // 
             this.lblCiudad.AutoSize = true;
             this.lblCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCiudad.Location = new System.Drawing.Point(13, 26);
+            this.lblCiudad.Location = new System.Drawing.Point(6, 26);
             this.lblCiudad.Name = "lblCiudad";
             this.lblCiudad.Size = new System.Drawing.Size(56, 20);
             this.lblCiudad.TabIndex = 7;
             this.lblCiudad.Text = "Ciudad";
             // 
-            // txtNumero
-            // 
-            this.txtNumero.Location = new System.Drawing.Point(83, 83);
-            this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(140, 25);
-            this.txtNumero.TabIndex = 14;
-            // 
-            // lblNumero
-            // 
-            this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumero.Location = new System.Drawing.Point(13, 88);
-            this.lblNumero.Name = "lblNumero";
-            this.lblNumero.Size = new System.Drawing.Size(63, 20);
-            this.lblNumero.TabIndex = 13;
-            this.lblNumero.Text = "Número";
-            // 
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(401, 388);
+            this.btnVolver.Location = new System.Drawing.Point(401, 357);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 28);
             this.btnVolver.TabIndex = 2;
@@ -203,7 +182,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(482, 388);
+            this.btnRegistrar.Location = new System.Drawing.Point(482, 357);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 28);
             this.btnRegistrar.TabIndex = 3;
@@ -236,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(582, 432);
+            this.ClientSize = new System.Drawing.Size(582, 398);
             this.Controls.Add(this.pctVolver);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnVolver);
@@ -271,12 +250,10 @@
         private System.Windows.Forms.TabControl tabControlDatos;
         private System.Windows.Forms.TabPage tabPageDireccion;
         private System.Windows.Forms.TabPage tabPageContactos;
-        private System.Windows.Forms.TextBox txtCalle;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label lblCiudad;
         private System.Windows.Forms.TextBox txtCiudad;
-        private System.Windows.Forms.Label lblCalle;
-        private System.Windows.Forms.TextBox txtNumero;
-        private System.Windows.Forms.Label lblNumero;
+        private System.Windows.Forms.Label lblDireccion;
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.PictureBox pctVolver;
