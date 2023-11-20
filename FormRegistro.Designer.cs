@@ -43,7 +43,7 @@
             this.lblCiudad = new System.Windows.Forms.Label();
             this.txtNumero = new System.Windows.Forms.TextBox();
             this.lblNumero = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnVolver = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.pctRegistro = new System.Windows.Forms.PictureBox();
             this.pctVolver = new System.Windows.Forms.PictureBox();
@@ -189,15 +189,16 @@
             this.lblNumero.TabIndex = 13;
             this.lblNumero.Text = "Número";
             // 
-            // btnCancelar
+            // btnVolver
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(401, 388);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(75, 28);
-            this.btnCancelar.TabIndex = 2;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolver.Location = new System.Drawing.Point(401, 388);
+            this.btnVolver.Name = "btnVolver";
+            this.btnVolver.Size = new System.Drawing.Size(75, 28);
+            this.btnVolver.TabIndex = 2;
+            this.btnVolver.Text = "Volver";
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // btnRegistrar
             // 
@@ -208,6 +209,7 @@
             this.btnRegistrar.TabIndex = 3;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // pctRegistro
             // 
@@ -226,20 +228,23 @@
             this.pctVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctVolver.TabIndex = 4;
             this.pctVolver.TabStop = false;
+            this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
             // 
             // FormRegistro
             // 
+            this.AcceptButton = this.btnRegistrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(582, 432);
             this.Controls.Add(this.pctVolver);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.tabControlDatos);
             this.Controls.Add(this.gbDatos);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormRegistro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -272,7 +277,7 @@
         private System.Windows.Forms.Label lblCalle;
         private System.Windows.Forms.TextBox txtNumero;
         private System.Windows.Forms.Label lblNumero;
-        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.PictureBox pctVolver;
     }
