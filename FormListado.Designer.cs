@@ -38,8 +38,11 @@
             this.dataGridViewListado = new System.Windows.Forms.DataGridView();
             this.pctVolver = new System.Windows.Forms.PictureBox();
             this.btnVolver = new System.Windows.Forms.Button();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
             this.tabControlDatos.SuspendLayout();
             this.tabPageApellido.SuspendLayout();
+            this.tabPageDireccion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).BeginInit();
             this.SuspendLayout();
@@ -86,6 +89,8 @@
             // 
             // tabPageDireccion
             // 
+            this.tabPageDireccion.Controls.Add(this.txtDireccion);
+            this.tabPageDireccion.Controls.Add(this.lblDireccion);
             this.tabPageDireccion.Location = new System.Drawing.Point(4, 26);
             this.tabPageDireccion.Name = "tabPageDireccion";
             this.tabPageDireccion.Padding = new System.Windows.Forms.Padding(3);
@@ -133,6 +138,23 @@
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
             // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Location = new System.Drawing.Point(158, 52);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(285, 25);
+            this.txtDireccion.TabIndex = 9;
+            // 
+            // lblDireccion
+            // 
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDireccion.Location = new System.Drawing.Point(80, 53);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(72, 20);
+            this.lblDireccion.TabIndex = 8;
+            this.lblDireccion.Text = "Dirección";
+            // 
             // FormListado
             // 
             this.AcceptButton = this.btnListar;
@@ -154,6 +176,8 @@
             this.tabControlDatos.ResumeLayout(false);
             this.tabPageApellido.ResumeLayout(false);
             this.tabPageApellido.PerformLayout();
+            this.tabPageDireccion.ResumeLayout(false);
+            this.tabPageDireccion.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewListado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).EndInit();
             this.ResumeLayout(false);
@@ -171,5 +195,7 @@
         private System.Windows.Forms.DataGridView dataGridViewListado;
         private System.Windows.Forms.PictureBox pctVolver;
         private System.Windows.Forms.Button btnVolver;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.Label lblDireccion;
     }
 }

@@ -45,9 +45,12 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.pctRegistro = new System.Windows.Forms.PictureBox();
             this.pctVolver = new System.Windows.Forms.PictureBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.gbDatos.SuspendLayout();
             this.tabControlDatos.SuspendLayout();
             this.tabPageDireccion.SuspendLayout();
+            this.tabPageContactos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctRegistro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).BeginInit();
             this.SuspendLayout();
@@ -126,24 +129,26 @@
             // 
             // tabPageContactos
             // 
+            this.tabPageContactos.Controls.Add(this.lblTelefono);
+            this.tabPageContactos.Controls.Add(this.txtTelefono);
             this.tabPageContactos.Location = new System.Drawing.Point(4, 26);
             this.tabPageContactos.Name = "tabPageContactos";
             this.tabPageContactos.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPageContactos.Size = new System.Drawing.Size(529, 171);
+            this.tabPageContactos.Size = new System.Drawing.Size(529, 100);
             this.tabPageContactos.TabIndex = 1;
             this.tabPageContactos.Text = "Contactos";
             this.tabPageContactos.UseVisualStyleBackColor = true;
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(83, 52);
+            this.txtDireccion.Location = new System.Drawing.Point(163, 51);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(285, 25);
             this.txtDireccion.TabIndex = 12;
             // 
             // txtCiudad
             // 
-            this.txtCiudad.Location = new System.Drawing.Point(83, 21);
+            this.txtCiudad.Location = new System.Drawing.Point(163, 20);
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(285, 25);
             this.txtCiudad.TabIndex = 10;
@@ -152,7 +157,7 @@
             // 
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDireccion.Location = new System.Drawing.Point(6, 57);
+            this.lblDireccion.Location = new System.Drawing.Point(86, 56);
             this.lblDireccion.Name = "lblDireccion";
             this.lblDireccion.Size = new System.Drawing.Size(72, 20);
             this.lblDireccion.TabIndex = 9;
@@ -162,7 +167,7 @@
             // 
             this.lblCiudad.AutoSize = true;
             this.lblCiudad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCiudad.Location = new System.Drawing.Point(6, 26);
+            this.lblCiudad.Location = new System.Drawing.Point(86, 25);
             this.lblCiudad.Name = "lblCiudad";
             this.lblCiudad.Size = new System.Drawing.Size(56, 20);
             this.lblCiudad.TabIndex = 7;
@@ -209,6 +214,23 @@
             this.pctVolver.TabStop = false;
             this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
             // 
+            // lblTelefono
+            // 
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.Location = new System.Drawing.Point(90, 39);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(67, 20);
+            this.lblTelefono.TabIndex = 11;
+            this.lblTelefono.Text = "Teléfono";
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Location = new System.Drawing.Point(163, 38);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(285, 25);
+            this.txtTelefono.TabIndex = 12;
+            // 
             // FormRegistro
             // 
             this.AcceptButton = this.btnRegistrar;
@@ -233,6 +255,8 @@
             this.tabControlDatos.ResumeLayout(false);
             this.tabPageDireccion.ResumeLayout(false);
             this.tabPageDireccion.PerformLayout();
+            this.tabPageContactos.ResumeLayout(false);
+            this.tabPageContactos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctRegistro)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).EndInit();
             this.ResumeLayout(false);
@@ -257,5 +281,7 @@
         private System.Windows.Forms.Button btnVolver;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.PictureBox pctVolver;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.TextBox txtTelefono;
     }
 }

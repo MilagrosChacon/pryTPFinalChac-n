@@ -64,6 +64,7 @@ namespace pryTPFinalChacón
         private void btnListar_Click(object sender, EventArgs e)
         {
             string filtroApellido = txtApellido.Text.Trim();
+            string filtroDireccion = txtDireccion.Text.Trim();
 
             if (!string.IsNullOrEmpty(filtroApellido))
             {
