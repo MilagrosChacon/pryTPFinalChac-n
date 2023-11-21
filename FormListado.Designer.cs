@@ -127,6 +127,7 @@
             this.pctVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctVolver.TabIndex = 6;
             this.pctVolver.TabStop = false;
+            this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
             // 
             // btnVolver
             // 
@@ -137,6 +138,7 @@
             this.btnVolver.TabIndex = 7;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // txtDireccion
             // 

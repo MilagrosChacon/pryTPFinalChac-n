@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditor));
-            this.dgvEdición = new System.Windows.Forms.DataGridView();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -43,24 +42,16 @@
             this.gbQuitar = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCaracter = new System.Windows.Forms.TextBox();
             this.btnEspacios = new System.Windows.Forms.Button();
             this.btnCaracter = new System.Windows.Forms.Button();
             this.pctVolver = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEdición)).BeginInit();
+            this.txtEditor = new System.Windows.Forms.TextBox();
             this.gbHerramientas.SuspendLayout();
             this.statusStripCaracteres.SuspendLayout();
             this.gbQuitar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvEdición
-            // 
-            this.dgvEdición.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEdición.Location = new System.Drawing.Point(75, 11);
-            this.dgvEdición.Name = "dgvEdición";
-            this.dgvEdición.Size = new System.Drawing.Size(743, 255);
-            this.dgvEdición.TabIndex = 0;
             // 
             // btnGuardar
             // 
@@ -164,7 +155,7 @@
             // gbQuitar
             // 
             this.gbQuitar.Controls.Add(this.btnEspacios);
-            this.gbQuitar.Controls.Add(this.textBox1);
+            this.gbQuitar.Controls.Add(this.txtCaracter);
             this.gbQuitar.Controls.Add(this.btnCaracter);
             this.gbQuitar.Location = new System.Drawing.Point(490, 24);
             this.gbQuitar.Name = "gbQuitar";
@@ -182,6 +173,7 @@
             this.btnBuscar.TabIndex = 8;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnModificar
             // 
@@ -192,13 +184,14 @@
             this.btnModificar.TabIndex = 14;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
-            // textBox1
+            // txtCaracter
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 25);
-            this.textBox1.TabIndex = 0;
+            this.txtCaracter.Location = new System.Drawing.Point(28, 26);
+            this.txtCaracter.Name = "txtCaracter";
+            this.txtCaracter.Size = new System.Drawing.Size(100, 25);
+            this.txtCaracter.TabIndex = 0;
             // 
             // btnEspacios
             // 
@@ -229,6 +222,15 @@
             this.pctVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctVolver.TabIndex = 8;
             this.pctVolver.TabStop = false;
+            this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
+            // 
+            // txtEditor
+            // 
+            this.txtEditor.Location = new System.Drawing.Point(75, 12);
+            this.txtEditor.Multiline = true;
+            this.txtEditor.Name = "txtEditor";
+            this.txtEditor.Size = new System.Drawing.Size(743, 254);
+            this.txtEditor.TabIndex = 9;
             // 
             // FormEditor
             // 
@@ -236,17 +238,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(834, 496);
+            this.Controls.Add(this.txtEditor);
             this.Controls.Add(this.pctVolver);
             this.Controls.Add(this.gbHerramientas);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dgvEdición);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "FormEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Editor de Texto";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEdición)).EndInit();
             this.gbHerramientas.ResumeLayout(false);
             this.gbHerramientas.PerformLayout();
             this.statusStripCaracteres.ResumeLayout(false);
@@ -255,12 +257,11 @@
             this.gbQuitar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctVolver)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvEdición;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.Button btnCancelar;
@@ -274,9 +275,10 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.GroupBox gbQuitar;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCaracter;
         private System.Windows.Forms.Button btnEspacios;
         private System.Windows.Forms.Button btnCaracter;
         private System.Windows.Forms.PictureBox pctVolver;
+        private System.Windows.Forms.TextBox txtEditor;
     }
 }

@@ -78,6 +78,20 @@ namespace pryTPFinalChacón
             }
 
         }
+
+        private void pctVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form inicio = new FormInicio();
+            inicio.Show();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form inicio = new FormInicio();
+            inicio.Show();
+        }
     }
 
 }
