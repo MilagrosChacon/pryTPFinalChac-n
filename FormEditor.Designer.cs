@@ -57,7 +57,7 @@
             // dgvEdición
             // 
             this.dgvEdición.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvEdición.Location = new System.Drawing.Point(12, 55);
+            this.dgvEdición.Location = new System.Drawing.Point(75, 11);
             this.dgvEdición.Name = "dgvEdición";
             this.dgvEdición.Size = new System.Drawing.Size(743, 255);
             this.dgvEdición.TabIndex = 0;
@@ -65,7 +65,7 @@
             // btnGuardar
             // 
             this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(677, 316);
+            this.btnGuardar.Location = new System.Drawing.Point(740, 272);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 28);
             this.btnGuardar.TabIndex = 5;
@@ -75,7 +75,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(596, 316);
+            this.btnNuevo.Location = new System.Drawing.Point(659, 272);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 28);
             this.btnNuevo.TabIndex = 4;
@@ -85,7 +85,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(515, 316);
+            this.btnCancelar.Location = new System.Drawing.Point(578, 272);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 28);
             this.btnCancelar.TabIndex = 6;
@@ -103,7 +103,7 @@
             this.gbHerramientas.Controls.Add(this.lblBuscar);
             this.gbHerramientas.Controls.Add(this.lblModificar);
             this.gbHerramientas.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbHerramientas.Location = new System.Drawing.Point(12, 354);
+            this.gbHerramientas.Location = new System.Drawing.Point(75, 310);
             this.gbHerramientas.Name = "gbHerramientas";
             this.gbHerramientas.Size = new System.Drawing.Size(743, 171);
             this.gbHerramientas.TabIndex = 7;
@@ -235,7 +235,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(767, 540);
+            this.ClientSize = new System.Drawing.Size(834, 496);
             this.Controls.Add(this.pctVolver);
             this.Controls.Add(this.gbHerramientas);
             this.Controls.Add(this.btnCancelar);

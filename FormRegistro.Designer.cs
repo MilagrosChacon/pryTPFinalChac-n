@@ -59,7 +59,7 @@
             this.gbDatos.Controls.Add(this.txtNombre);
             this.gbDatos.Controls.Add(this.lblApellido);
             this.gbDatos.Controls.Add(this.lblNombre);
-            this.gbDatos.Location = new System.Drawing.Point(24, 59);
+            this.gbDatos.Location = new System.Drawing.Point(69, 9);
             this.gbDatos.Name = "gbDatos";
             this.gbDatos.Size = new System.Drawing.Size(537, 156);
             this.gbDatos.TabIndex = 0;
@@ -104,7 +104,7 @@
             this.tabControlDatos.Controls.Add(this.tabPageDireccion);
             this.tabControlDatos.Controls.Add(this.tabPageContactos);
             this.tabControlDatos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlDatos.Location = new System.Drawing.Point(24, 221);
+            this.tabControlDatos.Location = new System.Drawing.Point(69, 182);
             this.tabControlDatos.Name = "tabControlDatos";
             this.tabControlDatos.SelectedIndex = 0;
             this.tabControlDatos.Size = new System.Drawing.Size(537, 130);
@@ -171,7 +171,7 @@
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(401, 357);
+            this.btnVolver.Location = new System.Drawing.Point(446, 318);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 28);
             this.btnVolver.TabIndex = 2;
@@ -182,7 +182,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(482, 357);
+            this.btnRegistrar.Location = new System.Drawing.Point(527, 318);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 28);
             this.btnRegistrar.TabIndex = 3;
@@ -201,7 +201,7 @@
             // pctVolver
             // 
             this.pctVolver.Image = global::pryTPFinalChacón.Properties.Resources.volver;
-            this.pctVolver.Location = new System.Drawing.Point(24, 12);
+            this.pctVolver.Location = new System.Drawing.Point(12, 12);
             this.pctVolver.Name = "pctVolver";
             this.pctVolver.Size = new System.Drawing.Size(47, 38);
             this.pctVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -215,7 +215,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(582, 398);
+            this.ClientSize = new System.Drawing.Size(628, 370);
             this.Controls.Add(this.pctVolver);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.btnVolver);

@@ -49,6 +49,12 @@ namespace pryTPFinalChacón
             string mensaje = $"¡Registro exitoso!\nNombre: {nombre}\nApellido: {apellido}\nCiudad: {ciudad}\nDirección: {direccion}";
             MessageBox.Show(mensaje, "¡Registro Exitoso!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            txtNombre.Text = "";
+            txtApellido.Text = "";
+            txtCiudad.Text = "";
+            txtDireccion.Text = "";
+            txtNombre.Focus();
+
         }
 
         private void btnVolver_Click(object sender, EventArgs e)

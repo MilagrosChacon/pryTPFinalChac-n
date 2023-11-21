@@ -59,9 +59,9 @@ namespace pryTPFinalChacón
             {
                 conexionBD.Open();
 
-                string consulta = "SELECT * FROM Empleados WHERE Apellido LIKE APELLIDO";
+                string consulta = "SELECT * FROM Empleados WHERE Apellido LIKE @APELLIDO";
                 OleDbDataAdapter adaptadorBD = new OleDbDataAdapter(consulta, conexionBD);
-                adaptadorBD.SelectCommand.Parameters.AddWithValue("APELLIDO", "%" + apellido + "%");
+                adaptadorBD.SelectCommand.Parameters.AddWithValue("@APELLIDO", "%" + apellido + "%");
                 adaptadorBD.Fill(tablaEmpleados);
             }
             catch (Exception ex)

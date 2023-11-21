@@ -30,6 +30,9 @@ namespace pryTPFinalChacón
 
             empleados = new ClassEmpleados(@"Provider = Microsoft.ACE.OLEDB.12.0;" + " Data Source = ..\\..\\Resources\\EMPLEADO.accdb");
 
+            dataGridViewListado.AutoGenerateColumns = true;
+            dataGridViewListado.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+
             CargarDatos();
         }
 
@@ -62,6 +65,19 @@ namespace pryTPFinalChacón
 
             dataGridViewListado.DataSource = empleadosFiltrados;
         }
-    }
+
+        private void pctVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form inicio = new FormInicio();
+            inicio.Show();
+        }
+
+        private void btnVolver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form inicio = new FormInicio();
+            inicio.Show();
+        }
     }
 }

@@ -49,7 +49,7 @@
             this.tabControlDatos.Controls.Add(this.tabPageApellido);
             this.tabControlDatos.Controls.Add(this.tabPageDireccion);
             this.tabControlDatos.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControlDatos.Location = new System.Drawing.Point(11, 58);
+            this.tabControlDatos.Location = new System.Drawing.Point(65, 13);
             this.tabControlDatos.Name = "tabControlDatos";
             this.tabControlDatos.SelectedIndex = 0;
             this.tabControlDatos.Size = new System.Drawing.Size(538, 159);
@@ -97,7 +97,7 @@
             // btnListar
             // 
             this.btnListar.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnListar.Location = new System.Drawing.Point(470, 223);
+            this.btnListar.Location = new System.Drawing.Point(524, 178);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 28);
             this.btnListar.TabIndex = 4;
@@ -108,7 +108,7 @@
             // dataGridViewListado
             // 
             this.dataGridViewListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewListado.Location = new System.Drawing.Point(15, 266);
+            this.dataGridViewListado.Location = new System.Drawing.Point(69, 221);
             this.dataGridViewListado.Name = "dataGridViewListado";
             this.dataGridViewListado.Size = new System.Drawing.Size(530, 179);
             this.dataGridViewListado.TabIndex = 5;
@@ -122,29 +122,33 @@
             this.pctVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctVolver.TabIndex = 6;
             this.pctVolver.TabStop = false;
+            this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
             // 
             // btnVolver
             // 
             this.btnVolver.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(470, 451);
+            this.btnVolver.Location = new System.Drawing.Point(524, 406);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(75, 28);
             this.btnVolver.TabIndex = 7;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // FormListado
             // 
+            this.AcceptButton = this.btnListar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(557, 491);
+            this.ClientSize = new System.Drawing.Size(622, 453);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.pctVolver);
             this.Controls.Add(this.dataGridViewListado);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.tabControlDatos);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.MaximizeBox = false;
             this.Name = "FormListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

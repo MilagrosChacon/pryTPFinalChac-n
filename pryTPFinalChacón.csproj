@@ -123,5 +123,10 @@
   <ItemGroup>
     <None Include="Resources\volver.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\EMPLEADO.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
