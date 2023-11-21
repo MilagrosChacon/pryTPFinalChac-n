@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListado));
             this.tabControlDatos = new System.Windows.Forms.TabControl();
             this.tabPageApellido = new System.Windows.Forms.TabPage();
-            this.tabPageDireccion = new System.Windows.Forms.TabPage();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
+            this.tabPageDireccion = new System.Windows.Forms.TabPage();
             this.btnListar = new System.Windows.Forms.Button();
             this.dataGridViewListado = new System.Windows.Forms.DataGridView();
             this.pctVolver = new System.Windows.Forms.PictureBox();
@@ -67,16 +67,6 @@
             this.tabPageApellido.Text = "Apellido";
             this.tabPageApellido.UseVisualStyleBackColor = true;
             // 
-            // tabPageDireccion
-            // 
-            this.tabPageDireccion.Location = new System.Drawing.Point(4, 24);
-            this.tabPageDireccion.Name = "tabPageDireccion";
-            this.tabPageDireccion.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDireccion.Size = new System.Drawing.Size(530, 131);
-            this.tabPageDireccion.TabIndex = 1;
-            this.tabPageDireccion.Text = "Dirección";
-            this.tabPageDireccion.UseVisualStyleBackColor = true;
-            // 
             // txtApellido
             // 
             this.txtApellido.Location = new System.Drawing.Point(154, 54);
@@ -93,6 +83,16 @@
             this.lblApellido.Size = new System.Drawing.Size(66, 20);
             this.lblApellido.TabIndex = 6;
             this.lblApellido.Text = "Apellido";
+            // 
+            // tabPageDireccion
+            // 
+            this.tabPageDireccion.Location = new System.Drawing.Point(4, 26);
+            this.tabPageDireccion.Name = "tabPageDireccion";
+            this.tabPageDireccion.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageDireccion.Size = new System.Drawing.Size(530, 129);
+            this.tabPageDireccion.TabIndex = 1;
+            this.tabPageDireccion.Text = "Dirección";
+            this.tabPageDireccion.UseVisualStyleBackColor = true;
             // 
             // btnListar
             // 
@@ -122,7 +122,6 @@
             this.pctVolver.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pctVolver.TabIndex = 6;
             this.pctVolver.TabStop = false;
-            this.pctVolver.Click += new System.EventHandler(this.pctVolver_Click);
             // 
             // btnVolver
             // 
@@ -133,7 +132,6 @@
             this.btnVolver.TabIndex = 7;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
-            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // FormListado
             // 
